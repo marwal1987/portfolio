@@ -12,16 +12,16 @@ export default function HeroSection() {
   };
 
   return (
-    <section className="py-12 bg-stone-100 dark:bg-gray-800 flex items-center justify-evenly">
-      <div className="container flex flex-col items-center justify-center gap-12 max-w-96">
+    <section className="py-12 bg-stone-100 dark:bg-gray-800 flex flex-col lg:flex-row items-center justify-center gap-12">
+      <div className="container flex flex-col items-center justify-center max-w-96 gap-12">
         <h1
-          className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white text-left"
+          className="text-3xl md:text-4xl font-bold text-gray-800 dark:text-white md:text-left text-center"
           style={textStyle}
         >
           Versatile Front-End Developer and Linux Enthusiast with a Melodic
           Twist
         </h1>
-        <p className="text-lg text-gray-600 dark:text-gray-300 text-left">
+        <p className="text-lg text-gray-600 dark:text-gray-300 md:text-left text-center">
           Meet Martin, a multifaceted talent bridging the worlds of Front-End
           development and Linux expertise with a harmonious touch. With a
           journey that spans from mastering HTML, CSS, and React to delving into
@@ -32,13 +32,15 @@ export default function HeroSection() {
           harmonize code and melody, one line at a time.
         </p>
       </div>
-      <Image
-        src="/images/man-on-the-moon.jpg"
-        height={500}
-        width={500}
-        alt="alt text?"
-        className="drop-shadow-2xl rounded-full"
-      />
+      <div className="flex items-center justify-center">
+        <Image
+          src="/images/man-on-the-moon.jpg"
+          height={500}
+          width={500}
+          alt="alt text?"
+          className="drop-shadow-2xl rounded-full"
+        />
+      </div>
     </section>
   );
 }

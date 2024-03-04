@@ -22,20 +22,19 @@ const ThemeSwitcher = () => {
       payload: { ...state.userPreferences, reduceAnimations },
     });
   };
-  
-  const baseStyle = "dark:bg-white bg-gray-800 text-md dark:text-gray-600 text-stone-100 rounded-md"
+
+  const baseStyle =
+    "dark:bg-white bg-gray-800 text-md dark:text-gray-600 text-stone-100 rounded-full";
 
   return (
-    <div className="p-12 flex justify-between items-center bg-stone-100 dark:bg-gray-800">
-      <button
-        onClick={toggleTheme}
-        className={`p-2 ${baseStyle}`}
-      >
+    <div className="p-4 sm:p-8 lg:p-12 flex flex-col lg:flex-row justify-center items-center bg-stone-100 dark:bg-gray-800 gap-12">
+      <button onClick={toggleTheme} className={`p-2 ${baseStyle}`}>
         Toggle Theme: {state.theme === "light" ? "Dark" : "Light"}
       </button>
       <div className={`p-2 ${baseStyle}`}>
         <label htmlFor="fontSize">Font Size: </label>
-        <select className={`${baseStyle}`}
+        <select
+          className={`${baseStyle}`}
           id="fontSize"
           value={state.userPreferences.fontSize}
           onChange={handleFontSizeChange}
