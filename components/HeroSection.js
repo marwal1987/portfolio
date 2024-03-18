@@ -36,10 +36,9 @@ export default function HeroSection() {
           development and Linux expertise with a harmonious touch. With a
           journey that spans from mastering HTML, CSS, and React to delving into
           the intricacies of Linux systems and virtualization technologies,
-          Martin brings a unique blend of technical prowess and musical
-          creativity to the table. From crafting captivating user interfaces to
-          orchestrating seamless DevOps workflows, Martin is on a mission to
-          harmonize code and melody, one line at a time.
+          Martin brings a unique blend of technical prowess and creativity to
+          the table. From crafting captivating user interfaces to orchestrating
+          seamless DevOps workflows.
         </p>
       </div>
       <div className="flex items-center justify-center">
