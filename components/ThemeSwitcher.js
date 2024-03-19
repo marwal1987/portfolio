@@ -26,7 +26,7 @@ const ThemeSwitcher = () => {
   };
 
   const baseStyle =
-    "p-2 bg-gradient-to-b from-emerald-700 to-emerald-900 dark:text-white text-md text-stone-100 rounded-lg cursor-pointer drop-shadow-lg hover:shadow-xl  active:translate-y-1 border-b-[4px] active:border-b-[0px] border-emerald-800 transition-all duration-100";
+    "p-2 bg-gradient-to-b from-emerald-700 to-emerald-900 dark:text-white text-md text-stone-100 rounded-lg cursor-pointer drop-shadow-lg hover:shadow-xl  active:translate-y-1 border-b-[4px] active:border-b-[0px] border-emerald-900/80 transition-all duration-100";
 
   return (
     <div className="p-4 sm:p-8 lg:p-12 flex flex-col lg:flex-row justify-evenly items-center bg-stone-100 dark:bg-gray-800 gap-12">
